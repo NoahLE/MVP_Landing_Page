@@ -24,6 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+# Change to domain name when deployed
 ALLOWED_HOSTS = []
 
 
