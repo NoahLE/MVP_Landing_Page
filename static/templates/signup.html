@@ -1,12 +1,39 @@
 {% extends 'base.html' %}
 
+{% block jumbotron %}
+    <div class="hero-unit">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+{% endblock %}
+
+
+
 <!-- content can be any name -->
 {% block content %}
-<h1>Join Now</h1>
-<!-- CSRF error because no token -->
-<form action="" method="post"> {% csrf_token %}
-    <!-- as_p == as paragraph -->
-    {{ form.as_p }}
-    <input type="submit" class="btn btn-success btn-block">
-</form>
+    <div class="span3">
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="span3">
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="span3">
+      <h2>Heading</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="span3">
+        <h2>Join Now</h2>
+        <!-- CSRF error because no token -->
+        <form action="" method="post"> {% csrf_token %}
+            <!-- as_p == as paragraph -->
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success btn-block">
+        </form>
+    </div>
 {% endblock %}

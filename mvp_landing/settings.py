@@ -100,5 +100,5 @@ if DEBUG:
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
     # put all css, js, etc (eventually goes to static root)(for production)
     STATICFILES_DIRS = (
-        os.path.join(os.path.dirname(BASE_DIR), "static", "static")
-    ),
+        os.path.join(os.path.dirname(BASE_DIR), "static", "static"),
+    )

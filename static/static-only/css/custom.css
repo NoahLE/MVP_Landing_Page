@@ -1,3 +1,17 @@
-.jumbotron {
-    background-color: #17D1FF;
+/* Jumbotron is called hero-unit in new template
+   title: Basic Marketing Site
+   url: http://getbootstrap.com/2.3.2/examples/hero.html
+
+   p {
+       color: rgba(253, 0, 51, 0.29);
+   }
+*/
+
+.hero-unit {
+    background-color: #17D1FF /* !important if in wrong order */;
 }
+
+/*.success {*/
+    /*background: #808080;*/
+    /*text-align: center;*/
+/*}*/

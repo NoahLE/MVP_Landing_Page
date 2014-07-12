@@ -9,6 +9,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # goes to views.py and looks for home
     url(r'^$', 'signups.views.home', name='home'),
+    url(r'^thank-you/$', 'signups.views.thankyou', name='thankyou'),
+    url(r'^about-us/$', 'signups.views.aboutus', name='aboutus'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
@@ -17,5 +19,5 @@ urlpatterns = patterns('',
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
                             document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.STATIC_URL,
+    urlpatterns += static(settings.MEDIA_URL,
                             document_root=settings.STATIC_ROOT)
