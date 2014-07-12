@@ -10,7 +10,10 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+# BASE_DIR == ~/Programming/Django/mvp_landing
+# add another encapsulating os.path.dirname() if you want to go up another level
+#       (static outside of project dir)
+BASE_DIR = os.path.dirname(__file__)
 
 
 # Quick-start development settings - unsuitable for production
@@ -82,3 +85,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# template location == mvp_landing -> static -> templates
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(BASE_DIR), "static", "templates"),
+    # '~/Programming/Django/mvp_landing/static/templates',
+)
