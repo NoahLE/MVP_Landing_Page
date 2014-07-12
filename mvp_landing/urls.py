@@ -9,6 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # goes to views.py and looks for home
     url(r'^$', 'signups.views.home', name='home'),
+    # name == url (ex thankyou -> thank-you.html)
     url(r'^thank-you/$', 'signups.views.thankyou', name='thankyou'),
     url(r'^about-us/$', 'signups.views.aboutus', name='aboutus'),
     # url(r'^blog/', include('blog.urls')),
