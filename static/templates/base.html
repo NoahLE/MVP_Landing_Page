@@ -81,6 +81,17 @@
       </div>
 
       <!-- Example row of columns -->
+      {% if messages %}
+      <div class="row">
+          <div class="span6 offset3">
+              {% for message in messages %}
+                  <p {% if message.tags == "success" %}class="alert alert-success"{% endif %}>{{ message }}</p>
+              {% endfor %}
+          </div>
+      </div>
+      {% endif %}
+
+
       <div class="row">
         <div class="span4">
           <h2>Heading</h2>
