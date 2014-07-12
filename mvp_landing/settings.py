@@ -91,3 +91,14 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(BASE_DIR), "static", "templates"),
     # '~/Programming/Django/mvp_landing/static/templates',
 )
+
+if DEBUG:
+    MEDIA_URL = '/media/'
+    # where all files are collected to
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static-only")
+    # where (picture) uploads go
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
+    # put all css, js, etc (eventually goes to static root)(for production)
+    STATICFILES_DIRS = (
+        os.path.join(os.path.dirname(BASE_DIR), "static", "static")
+    ),
