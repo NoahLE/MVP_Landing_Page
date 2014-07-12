@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <h1>Join Now</h1>
-    <!-- CSRF error because no token -->
-    <form action="" method="post"> {% csrf_token %}
-        <!-- as_p == as paragraph -->
-        {{ form.as_p }}
-        <input type="submit">
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+<!-- content can be any name -->
+{% block content %}
+<h1>Join Now</h1>
+<!-- CSRF error because no token -->
+<form action="" method="post"> {% csrf_token %}
+    <!-- as_p == as paragraph -->
+    {{ form.as_p }}
+    <input type="submit">
+</form>
+{% endblock %}
