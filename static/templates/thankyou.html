@@ -2,6 +2,10 @@
 
 {% block content %}
     <div class="span12" style="text-align: center;">
-        <h1>Thank you for joining!</h1>
+        <h1>Just one more step. Please complete the following:</h1>
+        <form action="" method="POST">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Complete Pre-Order">
+        </form>
     </div>
 {% endblock %}

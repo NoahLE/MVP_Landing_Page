@@ -24,12 +24,10 @@ SECRET_KEY = '(+zdon+y)c@8i!b#y##^($6^8de8i!m6a2prb8mrs8z0z2c@s!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 TEMPLATE_DEBUG = True
 
 # Change to domain name when deployed
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -40,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
     'signups',
 )
 

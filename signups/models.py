@@ -5,6 +5,7 @@ from django.utils.encoding import smart_unicode
 # Create your models here.
 # signup singular instance (below) -> signups for all instances (app)
 class SignUp(models.Model):
+    for_you = models.BooleanField(default=True, verbose_name="Is this purchase for you? If so, check this box.")
     # null = database ok blank
     # blank = form ok blank when submitted
     # charfield = max_length always required
