@@ -1,6 +1,17 @@
 MVP_Landing_Page
 ================
 
-Based on Coding for Entrepreneurs series for Django which can be found at https://www.youtube.com/playlist?list=PLEsfXFp6DpzRgedo9IzmcpXYoSeDg29Tx 
+# Introduction
 
-I'll do a push for each video so it will be easier to follow along.
+A mock web store which is built with the Django Python framework. This application supports the ability to place orders, review order details, delete orders, and update order details.
+
+![mvp-screenshot](mvp-screenshot.png)
+
+
+# Source
+
+The source code is based fromt the [Coding for Entrepreneurs](https://www.youtube.com/playlist?list=PLEsfXFp6DpzRgedo9IzmcpXYoSeDg29Tx) series.
+
+# Notes
+
+Each commit is roughly when each video ends. Large changes are broken into smaller commits
